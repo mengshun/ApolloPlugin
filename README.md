@@ -18,9 +18,9 @@ In the meantime, this project continues to advance with optimizations in securit
 
 We provide complete sample projects to help you get started quickly:
 
-- [Sample Code](https://github.com/your-org/apollo-plugin/tree/master/apollo-sample)
-- [Detailed Tutorial](https://github.com/your-org/apollo-plugin/wiki/Tutorial)
-- [API Documentation](https://github.com/your-org/apollo-plugin/wiki/API-Reference)
+- [Sample Code](https://github.com/starlitwe/ApolloPlugin/tree/dev/replugin-sample)
+- [Detailed Tutorial](https://github.com/Qihoo360/RePlugin/wiki/%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B)
+- [API Documentation](https://github.com/Qihoo360/RePlugin/wiki/API%E6%96%87%E6%A1%A3)
 
 ## Core Architecture
 
