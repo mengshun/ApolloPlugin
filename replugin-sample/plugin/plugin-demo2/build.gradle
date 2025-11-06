@@ -16,21 +16,35 @@
 buildscript {
     { p, cfg = "rp-config.gradle" -> if (new File(p, cfg).exists()) apply from: "${p}/${cfg}" else if (p.exists()) call(p.parentFile) }(buildscript.sourceFile.parentFile)
     repositories {
+        google()
         mavenCentral()
-        maven { url "https://maven.google.com" }
-        maven {url "http://maven.geelib.360.cn/nexus/repository/replugin/"}
+        gradlePluginPortal()
+        mavenLocal()
+        maven {
+            allowInsecureProtocol = true
+            url "https://maven.google.com" }
+        maven {
+            allowInsecureProtocol = true
+            url "http://maven.geelib.360.cn/nexus/repository/replugin/"}
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.4'
+        classpath 'com.android.tools.build:gradle:7.4.2'
         classpath "com.qihoo360.replugin:replugin-plugin-gradle:${RP_VERSION}"
     }
 }
 
 allprojects {
     repositories {
+        google()
         mavenCentral()
-        maven { url "https://maven.google.com" }
-        maven {url "http://maven.geelib.360.cn/nexus/repository/replugin/"}
+        gradlePluginPortal()
+        mavenLocal()
+        maven {
+            allowInsecureProtocol = true
+            url "https://maven.google.com" }
+        maven {
+            allowInsecureProtocol = true
+            url "http://maven.geelib.360.cn/nexus/repository/replugin/"}
     }
 }
 

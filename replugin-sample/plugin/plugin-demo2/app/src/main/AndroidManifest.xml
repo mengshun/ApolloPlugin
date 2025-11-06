@@ -52,14 +52,17 @@
             android:theme="@style/Theme.AppCompat"
             android:screenOrientation="portrait" />
         <!-- receivers -->
-        <receiver android:name=".receivers.PluginDemo2Receiver">
+        <receiver android:name=".receivers.PluginDemo2Receiver"
+            android:exported="false">
             <intent-filter>
                 <action android:name="com.qihoo360.repluginapp.receiver.ACTION1" />
             </intent-filter>
         </receiver>
 
         <!-- service -->
-        <service android:name=".service.PluginDemo2Service">
+        <service android:name=".service.PluginDemo2Service"
+            android:exported="false">
+
             <intent-filter>
                 <action android:name="com.qihoo360.replugin.sample.demo2.service.action" />
             </intent-filter>

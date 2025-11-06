@@ -19,7 +19,6 @@
 plugins {
     id 'com.android.application' version '7.4.2' apply false
     id 'maven-publish'
-    id "com.jfrog.bintray" version "1.+"
 }
 
 configure(allprojects - project(':replugin-plugin-lib')) {
